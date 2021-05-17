@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Search Your Word! :D</h1>
+        <form action="" class="form-group" id="form">
+         <input type="text" placeholder="Type it here..." name="word" id="word">
+         <label for="lang">Choose Language</label>
+         <select name="language" id="lang">
+             <option value="en_US">English (US)</option>
+             <option value="hi">Hindi</option>
+             <option value="fr">French</option>
+             <option value="es">Spanish</option>
+         </select>
+         <button>Search</button>
+        </form>
+
+       <div id="display">
+        <ul id="lists">
+
+        </ul>
+           <p id="error"></p>
+       </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
