@@ -31,8 +31,14 @@ form.addEventListener('submit', (evt)=>{
                     count++;
                     let li1 = document.createElement('li'); 
                     li1.innerHTML = `<b>Definition</b>(${count}) - <span>${ele.definition}</span>`;
+                   
                     let li2 = document.createElement('li');
-                    li2.innerHTML = `<b>Example</b>(${count}) - <span>${ele.example}</span>`;
+                    if(ele.example !== undefined){
+                        li2.innerHTML = `<b>Example</b>(${count}) - <span>${ele.example}</span>`;
+                    }else{
+                        li2.innerHTML = `<b>Example</b>(${count}) - <span>Not Available :(</span>`;
+                    }
+                    
                    
                     ulParent.appendChild(li1);
                     ulParent.appendChild(li2);
