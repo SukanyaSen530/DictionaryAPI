@@ -76,6 +76,11 @@ button:hover{
    padding: 10px;
 }
 
+#display p{
+    text-align: center;
+    color: rgb(241, 241, 104);
+}
+
 #display div{
     margin: 5px 10px;
 }
