@@ -10,6 +10,12 @@ form.addEventListener('submit', (evt)=>{
     evt.preventDefault();
     const lang = form.elements.lang.value;
     const word = form.elements.word.value;
+
+    if (word.length === 0 || word === " ") {
+      alert("Word can not be empty!");
+      return;
+    }
+
     form.elements.word.value = '';
     form.elements.lang.value = 'en_US';
     const sendURL = `${url}${lang}/${word}`;
